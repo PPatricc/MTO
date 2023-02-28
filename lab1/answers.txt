@@ -4,7 +4,7 @@ jfldjfldk tEST3 wynik
 fjdfsfds # k alal
 djfjkldsjf TEST5 jjjjjj fsfjdljfdlsj flj ldfj
 gjjkdsljflds TEST6 jdlkfjdslf
-fjdslkfjdl TEST7 tttttt
+fjdslkfjdl TESt7 TESt7 tttttt
 fjdlsjfkl TEST8 oooolll
-rwrewrew TEST9 fjdslkjfdl
-fjdlskjfldjflj TEST10 rewrewrew
+rwrewrew test9 fjdslkjfdl
+fjdlskjfldjflj TESt10 rewrewrew
