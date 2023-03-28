@@ -3,8 +3,6 @@
 import sys
 import re
 
-
-
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True
@@ -12,11 +10,14 @@ def my_printf(format_string,param):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'g':
             	if param.isnumeric():
-            		param = str(param)[::-1]
+            		param = str(eval(param))
+            		param = param[::-1]
+            		param = param.lstrip("0")
             		print(param,end="")
             		shouldDo=False
+            		
             else:
-                print(format_string[idx],end="")
+                print(format_string[idx].lstrip("g"),end="")
         else:
             shouldDo=True
     print("")
