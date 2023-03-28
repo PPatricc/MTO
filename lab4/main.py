@@ -4,7 +4,6 @@ import sys
 import re
 
 def my_printf(format_string,param):
-    #print(format_string)
     shouldDo=True
     for idx in range(0,len(format_string)):
         if shouldDo:
@@ -17,7 +16,7 @@ def my_printf(format_string,param):
             		shouldDo=False
             		
             else:
-                print(format_string[idx].lstrip("g"),end="")
+                print(format_string[idx].lstrip("#g"),end="")
         else:
             shouldDo=True
     print("")
