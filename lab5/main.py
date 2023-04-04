@@ -1,39 +1,30 @@
 #!/usr/bin/env python3
 
 import sys
+import re
 
 def my_printf(format_string,param):
-    i = 0
-    
-    while i < len(format_string):
-        if format_string[i] == "#":
-            width = 0
-            j = i + 1
-            while j < len(format_string) and format_string[j].isdigit():
-                width = width * 10 + int(format_string[j])
-                j += 1
-            if format_string[j] == "g" and param.isalnum():
-                result = ""
-                for c in param:
-                    if c == "0":
-                        result += "9"
-                    else:
-                    	if c.isalnum():
-                            result += str(int(c)-1)
-                if width > len(param):
-                    spaces = " " * (width - len(param))
-                    result = spaces + result
-                i = j + 1
-                print(result, end="")
-            else:
-            	print(format_string[i],end="")
-            	i += 1
+    list1 = list(param)
+    for i in range(len(list1)):
+        if list1[i] == '0':
+            list1[i] = '9'
         else:
-            print(format_string[i],end="")
-            i += 1
-                        
-    print("")
+            if list1[i].isdigit():
+                list1[i] = str(int(list1[i]) - 1)
+            else:
+                list1[i]=""
+    param = ''.join(list1)
 
+    x = re.search("#\d+g", format_string)
+    if x:    
+        format = x.group()
+        num = format[1:-1]
+        
+        s = param.rjust(int(num), ' ')
+        x = re.sub("#\d+g", s, format_string)
+        print(x)
+        return
+    print(re.sub("#g", param, format_string))
 
 data=sys.stdin.readlines()
 
