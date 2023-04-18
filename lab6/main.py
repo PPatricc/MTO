@@ -15,7 +15,6 @@ def replace(number):
         number //= 10
     return new_number
     
-
 def my_printf(format_string,param):
     pattern = r'^[0-9+\-*/()]+$'
     if str(param).isdigit() or re.match(pattern,str(param)):
@@ -24,18 +23,20 @@ def my_printf(format_string,param):
     list1 = list(param)
     for i in range(len(list1)):
         if list1[i].isdigit():
+            if list1[i] == '0':
+                list1[i] ='1'
             list1[i] = str(int(list1[i]))
         else:
             list1[i]=""
     param = ''.join(list1)
 
-    x = re.search("#\d+g", format_string)
+    x = re.search("#\.\d+g", format_string)
     if x:    
         format = x.group()
-        num = format[1:-1]
+        num = format[2:-1]
         
         s = param.rjust(int(num), '0')
-        x = re.sub("#\d+g", s, format_string)
+        x = re.sub("#\.\d+g", s, format_string)
         print(x)
         return
     print(re.sub("#g", param, format_string))
