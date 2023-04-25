@@ -4,8 +4,10 @@ import sys
 import re
     
 def my_printf(format_string,param):
-    param = hex(int(param))
-    param = str(param).lstrip("0x")
+    if int(param) != 0:
+        param = hex(int(param))
+        param = str(param).lstrip("0x")     
+    
     param = param.replace("a","g")
     param = param.replace("b","h")
     param = param.replace("c","i")
