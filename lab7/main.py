@@ -4,6 +4,12 @@ import sys
 import re
     
 def my_printf(format_string,param):
+    param = hex(int(param))
+    param = str(param).lstrip("0x")
+    prt = re.sub("#j", param, format_string)
+    print(prt)
+
+
 
 data=sys.stdin.readlines()
 
