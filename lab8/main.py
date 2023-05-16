@@ -14,8 +14,10 @@ def my_printf(format_string,param):
     param = param.replace("d","j")
     param = param.replace("e","k")
     param = param.replace("f","l")
-    prt = re.sub("#j", param, format_string)
-    print(prt)
+    param = param.replace("0","o")
+    
+
+    print(format_string)
 
 
 
