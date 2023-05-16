@@ -41,7 +41,7 @@ endef
 
 define perform_test
 	$(call prepare_input,$(1))
-	/bin/echo -n $(2)" input tests: "
+	/bin/echo -n $(2)" tests: "
 	$(call test_input,1)
 endef
 
@@ -65,7 +65,8 @@ endef
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 
 	$(call perform_test,bad,Good input)
-
+	$(call perform_test,wrongInput,Bad parameter provided)
+	
 	$(call restore_data)
 
 generate:
@@ -74,6 +75,7 @@ generate:
 	# generate_output,INPUT_FILE_NAME_WOUT_EXTENSION
 
 	$(call generate_answers,bad)
+	$(call generate_answers,wrongInput)
 
 	$(call restore_data)
 
@@ -81,7 +83,5 @@ merge:
 	-rm ./input.txt 2>/dev/null
 	-rm ./answers.txt 2>/dev/null
 
-	$(call merge_test,noparam)
-	$(call merge_test,short)
-	$(call merge_test,long)
 	$(call merge_test,bad)
+	$(call merge_test,wrongInput)
