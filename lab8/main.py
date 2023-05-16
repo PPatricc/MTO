@@ -22,7 +22,7 @@ def my_printf(format_string,param):
         num = format[2:-1]
         
         s = param.rjust(int(num), 'o')
-        x = re.sub("#\.\d+j", z, format_string)
+        x = re.sub("#\.\d+j", s, format_string)
         print(x)
         return
     print(format_string)
