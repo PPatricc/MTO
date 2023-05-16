@@ -16,7 +16,15 @@ def my_printf(format_string,param):
     param = param.replace("f","l")
     param = param.replace("0","o")
     
-
+    x = re.search("#\.\d+j", format_string)
+    if x:    
+        format = x.group()
+        num = format[2:-1]
+        
+        s = param.rjust(int(num), '0')
+        x = re.sub("#\.\d+j", s, format_string)
+        print(x)
+        return
     print(format_string)
 
 
