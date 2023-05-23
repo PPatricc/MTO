@@ -28,18 +28,22 @@ def change_num(x):
     
 def my_printf(format_string,param):
 
-    #for index, char in enumerate(param):
-    #    if not(param[index]=='.'):
-    #        param[index]=change_num(param[index])
-    #    else:
-    #        break
+
             
     x = re.search("#\.\d+h", format_string)
     if x:    
         format = x.group()
         num = format[2:-1]
         x = round(float(param),int(num))
-        print(x)
+        z = str(x)
+        s = list(z)
+        for index, char in enumerate(s):
+                if not(s[index]=='.'):
+                    s[index]=change_num(s[index])
+                else:
+                    break
+        m = ''.join(s)
+        print(m)
         return
     print(format_string)
 
