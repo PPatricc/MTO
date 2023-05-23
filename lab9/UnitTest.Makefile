@@ -64,9 +64,9 @@ endef
 	
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 
-	$(call perform_test,bad,Good input)
-	$(call perform_test,wrongInput,Bad parameter provided)
-	
+	$(call perform_test,bad,"Good input")
+	$(call perform_test,wrongInput,"Bad parameter provided")
+	$(call perform_test,long,"Long correct input")
 	$(call restore_data)
 
 generate:
@@ -76,7 +76,7 @@ generate:
 
 	$(call generate_answers,bad)
 	$(call generate_answers,wrongInput)
-
+	$(call generate_answers,long)
 	$(call restore_data)
 
 merge:
@@ -85,3 +85,4 @@ merge:
 
 	$(call merge_test,bad)
 	$(call merge_test,wrongInput)
+	$(call merge_test,long)

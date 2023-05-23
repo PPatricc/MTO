@@ -34,9 +34,7 @@ def change_let(y):
         return y    
 
 def my_printf(format_string,param):
-
-
-            
+  
     x = re.search("#\.\d+h", format_string)
     if x:    
         format = x.group()

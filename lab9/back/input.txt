@@ -1,23 +1,23 @@
-totafsdfsf #.5j fdsfsdf
-100
-totafsd #.2j fdsfsdf fdfjs
-50
-jfldjfldk #j wynik
-0
-fjdfsfds #.5j alal
-15
-djfjkldsjf #.3j #.3j jjjjjj fsfjdljfdlsj flj ldfj
-123
-gjjkdsljflds #.4j jdlkfjdslf
-1
-#.1julajnoga  tttttt
-11
-fjdlsjfkl #.1j oooolll
-1
-rwrewrew #.6j fjdslkjfdl
-12
-fjdlskjfldjflj #.8j rewrewrew
-11112
+totafsdfsf #.3h fdsfsdf
+10.568
+totafsdfsf #.1h fdsfsdf
+10.454
+totafsdfsf #.3h fdsfsdf
+10.333
+totafsdfsf #.5h fdsfsdf
+10.565
+totafsdfsf #.6h fdsfsdf
+10.454
+totafsdfsf #.7h fdsfsdf
+10.333
+totafsdfsf #.3h fdsfsdf
+10.565
+totafsdfsf #.1h fdsfsdf
+10.454
+totafsdfsf #.2h fdsfsdf
+10.333
+totafsdfsf #.5h fdsfsdf
+10.333
 totafsdfsf # fdsfsdf
 1
 totafsdfsf #j fdsfsdf
@@ -38,3 +38,23 @@ totafsdfsf #0 fdsfsdf
 1
 totafsdfsf #1 fdsfsdf
 1
+totafsdfsf #.3h fdsfsdf
+15670.32568
+totafsdfsf #.1h fdsfsdf
+1043.54454
+totafsdfsf #.3h fdsfsdf
+10234.54333
+totafsdfsf #.5h fdsfsdf
+106.444565
+totafsdfsf #.6h fdsfsdf
+10.4545555555
+totafsdfsf #.7h fdsfsdf
+10.23234333
+totafsdfsf #.3h fdsfsdf
+102524.55465
+totafsdfsf #.1h fdsfsdf
+14550.45454
+totafsdfsf #.2h fdsfsdf
+145450.4333
+totafsdfsf #.5h fdsfsdf
+103434.33433
