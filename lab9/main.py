@@ -26,6 +26,13 @@ def change_num(x):
         return 'j'
     return x
     
+def change_let(y):
+    try:
+        x = int(y)
+        return str((x+5)%10)
+    except:
+        return y    
+
 def my_printf(format_string,param):
 
 
@@ -37,11 +44,16 @@ def my_printf(format_string,param):
         x = round(float(param),int(num))
         z = str(x)
         s = list(z)
+        flag=0
         for index, char in enumerate(s):
-                if not(s[index]=='.'):
-                    s[index]=change_num(s[index])
+                if s[index]=='.':
+                    flag = 1
+                if flag==0:
+                    s[index] = change_num(s[index])
                 else:
-                    break
+                    s[index] = change_let(s[index])
+                
+        
         m = ''.join(s)
         print(m)
         return
