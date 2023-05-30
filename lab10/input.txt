@@ -1,20 +1,20 @@
-totafsdfsf #a fdsfsdf
-10
-totafsdfsf #a fdsfsdf
-15
-totafsdfsf #a fdsfsdf
-1
-totafsdfsf #a fdsfsdf
-8
-totafsdfsf #a fdsfsdf
-9999
-totafsdfsf #a fdsfsdf
-123
-totafsdfsf #a fdsfsdf
-12312
-totafsdfsf #a fdsfsdf
-150
-totafsdfsf #a fdsfsdf
-0
-totafsdfsf #a fdsfsdf
-111
+totafsdfsf #.3h fdsfsdf
+10.568
+totafsdfsf #.1h fdsfsdf
+10.454
+totafsdfsf #.3h fdsfsdf
+10.333
+totafsdfsf #.5h fdsfsdf
+10.565
+totafsdfsf #.6h fdsfsdf
+10.454
+totafsdfsf #.7h fdsfsdf
+10.333
+totafsdfsf #.3h fdsfsdf
+10.565
+totafsdfsf #.1h fdsfsdf
+10.454
+totafsdfsf #.2h fdsfsdf
+10.333
+totafsdfsf #.5h fdsfsdf
+10.333

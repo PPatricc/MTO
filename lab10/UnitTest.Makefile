@@ -66,7 +66,8 @@ endef
 
 	$(call perform_test,bad,"Good input")
 	$(call perform_test,wrongInput,"Bad parameter provided")
-	$(call perform_test,long,"Long correct input")
+	$(call perform_test,long,"Even numbers input")
+	$(call perform_test,odd,"Odd numbers input")
 	$(call restore_data)
 
 generate:
@@ -77,6 +78,7 @@ generate:
 	$(call generate_answers,bad)
 	$(call generate_answers,wrongInput)
 	$(call generate_answers,long)
+	$(call generate_answers,odd)
 	$(call restore_data)
 
 merge:
@@ -86,3 +88,4 @@ merge:
 	$(call merge_test,bad)
 	$(call merge_test,wrongInput)
 	$(call merge_test,long)
+	$(call merge_test,odd)

@@ -19,7 +19,8 @@ def change_odd(x):
 
 def my_printf(format_string,param):
     if '#a' not in format_string:
-        return format_string
+         print(format_string)
+         return
     
     new_N = change_num(int(param))
     to_print = change_odd(new_N)
