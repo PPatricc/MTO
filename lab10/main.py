@@ -21,10 +21,10 @@ def my_printf(format_string,param):
     if '#a' not in format_string:
         return format_string
     
-    new_N = change_num(param)
+    new_N = change_num(int(param))
     to_print = change_odd(new_N)
     
-    print(format_string.replace('#a',to_print))
+    print(format_string.replace('#a',str(to_print)))
 
 
 
