@@ -66,8 +66,8 @@ endef
 
 	$(call perform_test,bad,"Good input")
 	$(call perform_test,wrongInput,"Bad parameter provided")
-	$(call perform_test,long,"Even numbers input")
-	$(call perform_test,odd,"Odd numbers input")
+	$(call perform_test,long,"Long numbers input")
+	$(call perform_test,odd,"Small numbers input")
 	$(call restore_data)
 
 generate:
