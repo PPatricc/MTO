@@ -8,9 +8,10 @@ def my_printf(format_string,param):
     if '#b' not in format_string:
          print(format_string)
          return
-
+         
+    to_print = bin(int(param))
     
-    print(format_string.replace('#a',str(to_print)))
+    print(format_string.replace('#b',str(to_print)))
 
 
 
