@@ -9,7 +9,10 @@ def my_printf(format_string,param):
          print(format_string)
          return
          
+    
     to_print = bin(int(param))
+    to_print = to_print.replace('0b','')
+    to_print = to_print.replace('-0b','')
     
     print(format_string.replace('#b',str(to_print)))
 
