@@ -15,10 +15,13 @@ def my_printf(format_string,param):
     to_print = to_print.replace('-0b','')
     
     temp_print = ''
+    my_table = 'abcdefghij'
     
     for i, j in enumerate(binary[::-1]):
     	if j == '0':
     	    temp_print = temp_print + '0'
+    	else:
+    	    temp_print = temp_print + my_table[i]
     	
     
     print(format_string.replace('#b',str(to_print)))
