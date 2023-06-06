@@ -22,7 +22,8 @@ def my_printf(format_string,param):
     	    temp_print = temp_print + '0'
     	else:
     	    temp_print = temp_print + my_table[i%10]
-    	
+    	    
+    temp_print = temp_print[::-1]
     
     print(format_string.replace('#b',str(temp_print)))
 
